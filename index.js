@@ -4,6 +4,10 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
+app.get('/', (req, res) => {
+    res.redirect('/api/whoami');
+});
+
 app.get('/api/whoami', (req, res) => {
     var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
     
