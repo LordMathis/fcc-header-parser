@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node index"
   },
+  "engines": {
+    "node": "6.11.1"
+  },
   "keywords": [
     "freecodecamp",
     "parser",
